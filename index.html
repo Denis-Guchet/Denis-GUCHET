@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- 🔁 VALEUR À CHANGER SI BESOIN -->
+  <title>Denis GUCHET</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Reset simple */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
+
+    /* Images plein écran */
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Par défaut : version ordinateur */
+    .ordi {
+      display: block;
+    }
+
+    .mobi {
+      display: none;
+    }
+
+    /* 📱 À PARTIR DE 768px → version mobile */
+    @media (max-width: 768px) {
+      .ordi {
+        display: none;
+      }
+      .mobi {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 💻 VERSION ORDINATEUR -->
+  <img
+    src="V2.ORDI.png"
+    alt="Denis GUCHET – Présentation"
+    class="ordi"
+  >
+
+  <!-- 📱 VERSION MOBILE -->
+  <img
+    src="V2.MOBI.png"
+    alt="Denis GUCHET – Présentation mobile"
+    class="mobi"
+  >
+
+</body>
+</html>
